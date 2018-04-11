@@ -1,6 +1,21 @@
 var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
+var color1 = document.querySelector(".color1");
+var color2 = document.querySelector(".color2");
+var todoList = document.getElementById("todo-list");
+
+// change background
+function setGradient() {
+	todoList.style.background =
+	"linear-gradient(to right, "
+	+ color1.value
+	+ ", "
+	+ color2.value
+	+ ")";
+}
+color1.addEventListener("input", setGradient);
+color2.addEventListener("input", setGradient);
 
 function inputLength(){
 	return input.value.length;
