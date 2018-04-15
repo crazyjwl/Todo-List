@@ -1,3 +1,9 @@
+var _ = require('lodash');
+
+var array = [1,2,3,4,5,6,7,8];
+
+console.log(_.without(array,3));
+
 var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
